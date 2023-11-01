@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E7E1"
+
+    tools:context=".MainActivity">
+
+
+<!--상단바 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/some_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:background="@drawable/some_id"
+        android:elevation="4dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myPage"
+            android:text="< 마이페이지"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lay"
+        android:layout_below="@id/some_id">
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person"
+            android:id="@+id/person"
+            android:layout_below="@id/some_id"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:text="닉네임 님"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_below="@id/some_id"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:text="동아 아파트 101동 1203호"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_below="@id/name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--내 정보 (텍스트)-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMyInfo"
+        android:text="내 정보"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/lay"/>
+
+<!--    메뉴바-->
+<!--    내 정보-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/textMyInfo"
+        android:id="@+id/card"
+        android:background="@drawable/card">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/textProfillset"
+            android:text="프로필 관리"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="left|center"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+<!--나의 글-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMyText"
+        android:text="나의 글"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/card"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card2"
+        android:background="@drawable/card2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/textMyText">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/myText"
+            android:text="작성한 글"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="left|center"
+            android:layout_marginLeft="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line"
+            android:layout_below="@id/myText"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/myScrap"
+            android:text="스크랩한 글"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="left|center"
+            android:layout_below="@id/myText"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+<!--설정-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMyset"
+        android:text="설정"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/card2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card2_2"
+        android:background="@drawable/card2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/textMyset">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/alarm"
+            android:text="알림"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="left|center"
+            android:layout_marginLeft="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line"
+            android:layout_below="@id/alarm"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/darkMode"
+            android:text="다크모드"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="left|center"
+            android:layout_below="@id/alarm"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+<!--    고객센터-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textcustomcenter"
+        android:text="고객센터"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/card2_2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card3"
+        android:background="@drawable/card3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/textcustomcenter">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/faq"
+            android:text="FAQ"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="left|center"
+            android:layout_marginLeft="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line"
+            android:layout_below="@id/faq"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/announcement"
+            android:text="공지사항"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="left|center"
+            android:layout_below="@id/faq"
+            android:layout_marginLeft="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line"
+            android:layout_below="@id/announcement"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/inquary"
+            android:text="1:1 문의"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="left|center"
+            android:layout_below="@id/announcement"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+
+    <!--<ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="dra"-->
+
+<!--    프로필 사진 배경-->
+    <!--<RelativeLayout
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:clipToOutline="true"
+        android:background="@drawable/avatar"/>-->
+<!--     프로필 사진 머리-->
+   <!-- <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/ellipse_1"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:background="#6FBAFF"/>
+
+&lt;!&ndash;    프로필 사진 몸통&ndash;&gt;
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/rectangle_1"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:background="#6FBAFF"/>
+
+    <RelativeLayout
+        android:layout_width="328dp"
+        android:layout_height="40dp"
+        android:id="@+id/order_info_"-->
+
+
+</RelativeLayout>
