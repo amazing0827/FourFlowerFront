@@ -16,7 +16,7 @@
         android:id="@+id/some_id"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="false"
-        android:background="@drawable/some_id"
+        android:background="@drawable/jy_some_id"
         android:elevation="4dp"
         tools:ignore="MissingConstraints">
         <TextView
@@ -41,7 +41,7 @@
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:src="@drawable/jy_person"
-            android:id="@+id/person"
+            android:id="@+id/jy_person"
             android:layout_below="@id/some_id"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"/>
@@ -97,7 +97,7 @@
         android:layout_marginRight="20dp"
         android:layout_below="@id/textMyInfo"
         android:id="@+id/card"
-        android:background="@drawable/card">
+        android:background="@drawable/jy_card">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -125,7 +125,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/card2"
-        android:background="@drawable/card2"
+        android:background="@drawable/jy_card2"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_below="@id/textMyText">
@@ -141,7 +141,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@drawable/line"
+            android:background="@drawable/jy_line"
             android:layout_below="@id/myText"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"/>
@@ -173,7 +173,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/card2_2"
-        android:background="@drawable/card2"
+        android:background="@drawable/jy_card2"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_below="@id/textMyset">
@@ -189,7 +189,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@drawable/line"
+            android:background="@drawable/jy_line"
             android:layout_below="@id/alarm"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"/>
@@ -222,7 +222,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/card3"
-        android:background="@drawable/card3"
+        android:background="@drawable/jy_card3"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_below="@id/textcustomcenter">
@@ -238,7 +238,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@drawable/line"
+            android:background="@drawable/jy_line"
             android:layout_below="@id/faq"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"/>
@@ -255,7 +255,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@drawable/line"
+            android:background="@drawable/jy_line"
             android:layout_below="@id/announcement"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"/>

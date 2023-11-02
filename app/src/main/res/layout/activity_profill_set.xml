@@ -16,7 +16,7 @@
         android:id="@+id/some_id"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="false"
-        android:background="@drawable/some_id"
+        android:background="@drawable/jy_some_id"
         android:elevation="4dp"
         tools:ignore="MissingConstraints">
         <TextView
@@ -94,7 +94,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/message_bub">
+            android:background="@drawable/jy_message_bub">
             <!--            입력칸은 id 안줬습니다.-->
             <TextView
                 android:layout_width="wrap_content"
@@ -123,10 +123,10 @@
             android:text="비밀번호"
             android:textColor="#000000"
             android:textSize="25dp"/>
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/message_bub">
+            android:background="@drawable/jy_message_bub">
 <!--            입력칸은 id 안줬습니다.-->
             <TextView
                 android:layout_width="wrap_content"
@@ -137,7 +137,7 @@
                 android:textSize="20dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"/>
-        </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 
 
@@ -159,7 +159,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/message_bub">
+            android:background="@drawable/jy_message_bub">
             <!--            입력칸은 id 안줬습니다.-->
             <TextView
                 android:layout_width="wrap_content"
@@ -191,11 +191,93 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/familySet"
             android:text="가족 구성원 설정"
             android:textColor="#000000"
             android:textSize="25dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/manwoman">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/jy_selecicon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="남자"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/jy_noselected"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="여자"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jy_line"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="세"
+                android:layout_marginLeft="7dp"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="32dp"
+                android:src="@drawable/jy_delete"
+                android:layout_marginLeft="30dp"/>
 
-
+        </LinearLayout>
+<!--        추가 버튼-->
+        <ImageView
+            android:layout_width="72.5dp"
+            android:layout_height="30dp"
+            android:src="@drawable/jy_plusbutton"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"/>
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jy_generalbutton"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+        <!--            입력칸은 id 안줬습니다.-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수정"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
 
 </RelativeLayout>
