@@ -41,7 +41,7 @@
         <ImageView
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/person"
+            android:src="@drawable/jy_person_plus"
             android:id="@+id/person"
             android:layout_below="@id/some_id"
             android:layout_marginTop="10dp"
