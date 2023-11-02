@@ -8,6 +8,7 @@
 
     tools:context=".MainActivity">
 
+    
     <!--상단바 -->
     <RelativeLayout
         android:layout_width="match_parent"
@@ -30,6 +31,7 @@
             />
     </RelativeLayout>
 
+<!--    프로필-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,6 +75,7 @@
         </LinearLayout>
     </LinearLayout>
 
+<!--    아이디 칸(변경X)-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -91,7 +94,107 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/message_bub"/>
+            android:background="@drawable/message_bub">
+            <!--            입력칸은 id 안줬습니다.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jiye0710"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+<!--    비밀번호 입력 칸-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idcan"
+        android:id="@+id/secretcan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호"
+            android:textColor="#000000"
+            android:textSize="25dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/message_bub">
+<!--            입력칸은 id 안줬습니다.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="새로운 비밀번호를 입력하세요."
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+<!--    비밀번호 확인 칸-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secretcan"
+        android:id="@+id/scretcheckcan"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 확인"
+            android:textSize="25dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/message_bub">
+            <!--            입력칸은 id 안줬습니다.-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호를 입력해주세요."
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*비밀번호가 일치하지 않습니다."
+            android:textColor="#FF0000"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+<!-- 가족 구성원 추가-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scretcheckcan"
+        android:id="@+id/familyPlus"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가족 구성원 설정"
+            android:textColor="#000000"
+            android:textSize="25dp"/>
+
 
     </LinearLayout>
 
