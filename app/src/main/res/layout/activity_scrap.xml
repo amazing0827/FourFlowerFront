@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E7E1"
+    tools:context=".MainActivity">
+
+
+    <!--상단바 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/some_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:background="@drawable/jy_some_id"
+        android:elevation="4dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wrote"
+            android:text="< 스크랩 관리"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <!--    게시물-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/some_id"
+        android:id="@+id/fwrote"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="제목"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="한줄 \n두줄..."
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/jy_good" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="14dp"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/jy_time"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3:14"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="14dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:src="@drawable/jy_scrap"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/jy_dog"/>
+
+    </LinearLayout>
+    <!--게시물 구분 바-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/jy_line"
+        android:layout_below="@id/fwrote"
+        android:id="@+id/bar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <!--    두번째 게시물-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/bar"
+        android:id="@+id/swrote"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="제목"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="한줄 \n두줄..."
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/jy_good" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="14dp"/>
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/jy_time"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3:14"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="14dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:src="@drawable/jy_scrap"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/jy_dog"/>
+
+    </LinearLayout>
+
+    <!--게시물 구분 바-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/jy_line"
+        android:layout_below="@id/swrote"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/jy_tab_bar" />
+
+</RelativeLayout>

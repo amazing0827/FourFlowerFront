@@ -12,6 +12,15 @@
         android:theme="@style/Theme.FourFlower"
         tools:targetApi="31">
         <activity
+            android:name=".notice_board"
+            android:exported="false" />
+        <activity
+            android:name=".scrap"
+            android:exported="false" />
+        <activity
+            android:name=".your_wrote"
+            android:exported="false" />
+        <activity
             android:name=".ProfillSet"
             android:exported="false" />
         <activity
