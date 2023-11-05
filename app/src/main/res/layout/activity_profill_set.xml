@@ -130,15 +130,14 @@
             android:layout_height="match_parent"
             android:background="@drawable/jy_message_bub">
 <!--            입력칸은 id 안줬습니다.-->
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="새로운 비밀번호를 입력하세요."
+                android:hint="새로운 비밀번호를 입력하세요."
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="20dp"
                 android:textSize="20dp"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"/>
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </LinearLayout>
 
@@ -165,14 +164,13 @@
             android:layout_height="match_parent"
             android:background="@drawable/jy_message_bub">
             <!--            입력칸은 id 안줬습니다.-->
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="비밀번호를 입력해주세요."
+                android:hint="비밀번호를 입력해주세요."
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="20dp"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
+                android:textSize="20dp" />
         </RelativeLayout>
         <TextView
             android:layout_width="wrap_content"
@@ -233,13 +231,21 @@
                 android:text="여자"
                 android:textSize="20dp"
                 android:textColor="#000000"/>
-            <ImageView
+
+            <EditText
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"/>
+
+
+
+            <!--<ImageView
                 android:layout_width="45dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/jy_line"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
-                android:background="#000000"/>
+                android:layout_marginTop="20dp"
+                android:background="#000000"
+                android:src="@drawable/jy_line" />-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
