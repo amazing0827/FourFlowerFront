@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
 
-<!--상단바 -->
+    <!--상단바 -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,8 +22,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/myPage"
-            android:text="< 마이페이지"
+            android:id="@+id/notice"
+            android:text="< 게시판"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
             android:layout_marginTop="10dp"
@@ -31,65 +31,21 @@
             />
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/lay"
-        android:layout_below="@id/some_id">
-        <ImageView
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/jy_person"
-            android:id="@+id/jy_person"
-            android:layout_below="@id/some_id"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/name"
-                android:text="닉네임 님"
-                android:textColor="#000000"
-                android:textSize="20dp"
-                android:layout_below="@id/some_id"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/address"
-                android:text="동아 아파트 101동 1203호"
-                android:textColor="#000000"
-                android:textSize="20dp"
-                android:layout_below="@id/name"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                />
-
-        </LinearLayout>
-    </LinearLayout>
-
-<!--내 정보 (텍스트)-->
+    <!--내 정보 (텍스트)-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textMyInfo"
-        android:text="내 정보"
+        android:text="공지 게시판"
         android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
-        android:layout_below="@id/lay"/>
+        android:layout_below="@id/some_id"/>
 
-<!--    메뉴바-->
-<!--    내 정보-->
+    <!--    메뉴바-->
+    <!--    내 정보-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -108,7 +64,7 @@
             android:gravity="left|center"
             android:layout_marginLeft="20dp"/>
     </RelativeLayout>
-<!--나의 글-->
+    <!--나의 글-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -156,7 +112,7 @@
             android:layout_below="@id/myText"
             android:layout_marginLeft="20dp"/>
     </RelativeLayout>
-<!--설정-->
+    <!--설정-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -205,7 +161,7 @@
             android:layout_marginLeft="20dp"/>
     </RelativeLayout>
 
-<!--    고객센터-->
+    <!--    고객센터-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
